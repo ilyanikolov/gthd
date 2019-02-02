@@ -1,0 +1,41 @@
+// 1. Your custom variables and variable overwrites.
+$global-link-color: #DA7D02;
+$global-font-family: "Avenir",
+Helvetica,
+Arial,
+sans-serif;
+
+
+$global-primary-background: #179c52;
+$global-secondary-background: #111517;
+$global-muted-background: #f8f8f8;
+$offcanvas-bar-color-mode: dark;
+
+$global-success-background: #179c52;
+$global-warning-background: #f7b529;
+$global-danger-background: #ff3e30;
+
+// $notification-message-background: #222;
+$notification-message-font-size: 1rem;
+
+$navbar-background: #179c52;
+$offcanvas-bar-background: $global-muted-background;
+$offcanvas-bar-width: 450px !default;
+$offcanvas-bar-width-m: 450px !default;
+
+.uk-overlay-success {
+  background-color: rgba($global-primary-background, .9);
+}
+
+
+// 2. Import default variables and available mixins.
+@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+@mixin hook-card() {
+  color: #000;
+}
+
+// 4. Import UIkit.
+@import "uikit/src/scss/uikit-theme.scss";
